@@ -1,0 +1,10 @@
+<%= form_tag('/search', method: :get) do %>
+  <%= text_field_tag :user_id %>
+  <%= submit_tag 'Get Flickr photos' %>
+<% end %>
+
+<% unless params[:user_id].nil? %>
+  <% @photos.each do |photo| %>
+    <%= image_tag "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
+  <% end %>
+<% end %>
