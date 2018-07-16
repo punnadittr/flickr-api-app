@@ -10,7 +10,6 @@ I Learned About
 * Using external API
 * Pulling data from external source
 
-As a part of the Odin Project
-https://www.theodinproject.com/courses/ruby-on-rails/lessons/apis
+As a part of [the Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/apis)
 
 
