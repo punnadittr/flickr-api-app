@@ -5,8 +5,10 @@ class StaticPagesController < ApplicationController
     FlickRaw.api_key = ENV['FLICKRAW_API_KEY']
     FlickRaw.shared_secret = ENV['FLICKRAW_SHARED_SECRET']
     @flickr = FlickRaw::Flickr.new
-    unless params[:user_id].nil?
-      search
+    if !params[:user_id].blank?
+      search_by_id
+    elsif !params[:tag].blank?
+      search_by_tag
     end
     #@base_url = "https://farm#{farm-id}.staticflickr.com/#{server-id}/#{id}_#{secret}.jpg"
   end
