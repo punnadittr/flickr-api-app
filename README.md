@@ -1,24 +1,15 @@
-# README
+# Flickr Photo Search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Live Version](https://young-wildwood-74188.herokuapp.com/)
 
-Things you may want to cover:
+Features
+* Search for flickr photos by user id
+* Search for flickr photos by tags
 
-* Ruby version
+I Learned About
+* Using external API
+* Pulling data from external source
 
-* System dependencies
+As a part of [the Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/apis)
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
