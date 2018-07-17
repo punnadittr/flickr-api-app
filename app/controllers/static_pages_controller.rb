@@ -10,6 +10,5 @@ class StaticPagesController < ApplicationController
     elsif !params[:tag].blank?
       search_by_tag
     end
-    #@base_url = "https://farm#{farm-id}.staticflickr.com/#{server-id}/#{id}_#{secret}.jpg"
   end
 end

@@ -1,10 +1,12 @@
 <%= form_tag('/search', method: :get) do %>
   <%= label_tag 'Search By ID' %>
   <br>
-  <%= text_field_tag :tag %>
+  <%= text_field_tag :user_id %>
   <%= submit_tag 'Get Flickr photos' %>
 <% end %>
+
 <br>
+
 <%= form_tag('/search', method: :get) do %>
   <%= label_tag 'Search By Tags' %>
   <br>
@@ -13,14 +15,14 @@
 <% end %>
 
 <% unless params[:user_id].blank? %>
-<h1> Search Result for <%= params[:user_id] %></h1>
+  <h1> Search Result for <%= params[:user_id] %></h1>
   <% @photos_from_id.each do |photo| %>
     <%= image_tag "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
   <% end %>
 <% end %>
 
 <% unless params[:tag].blank? %>
-<h1> Search Result for <%= params[:tag] %></h1>
+  <h1> Search Result for <%= params[:tag] %></h1>
   <% @photos_from_tag.each do |photo| %>
     <%= image_tag "https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
   <% end %>
